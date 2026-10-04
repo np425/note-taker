@@ -1,0 +1,7 @@
+<form class="card card-body mb-4" (ngSubmit)="add()">
+  <input class="form-control mb-2" name="title" placeholder="Antraštė" [(ngModel)]="title" />
+  <textarea class="form-control mb-2" name="text" rows="3" placeholder="Užrašas" [(ngModel)]="text"></textarea>
+  <button class="btn btn-primary align-self-start" type="submit" [disabled]="!title.trim() && !text.trim()">
+    Pridėti
+  </button>
+</form>

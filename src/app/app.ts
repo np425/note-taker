@@ -1,12 +1,11 @@
-import { Component, signal } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { Component } from '@angular/core';
+import { NoteForm } from './components/note-form/note-form';
+import { NoteList } from './components/note-list/note-list';
 
 @Component({
-  imports: [RouterOutlet],
+  imports: [NoteForm, NoteList],
   selector: 'app-root',
   styleUrl: './app.css',
   templateUrl: './app.html',
 })
-export class App {
-  protected readonly title = signal('note-taker');
-}
+export class App {}
